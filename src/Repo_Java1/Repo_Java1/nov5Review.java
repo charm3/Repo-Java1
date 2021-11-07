@@ -71,7 +71,7 @@ public class nov5Review {
         String cityNameXLower = cityNameX.toLowerCase();
         boolean cityNameX_Ends = cityNameXLower.endsWith(endsWithCheckLower);
         System.out.println("\nis '" + cityNameX + "' ends with 'ity'?:" + cityNameX_Ends);
-        
+
 
 
 
