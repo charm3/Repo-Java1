@@ -43,6 +43,10 @@ public class Hwk3a {
         boolean sentence3Start = sent3Lowercase.startsWith(healthLowercase);
         System.out.println( "is sentence3 starts with '" + healthLowercase + "'? " + sentence3Start);
 
+    // or I can do this way:
+        boolean sent3Start = sentence3.toLowerCase().startsWith("health".toLowerCase());
+        System.out.println("is sentence3 starts with 'health'? " + sentence3Start);
+
     // below to check if sentence3 contains "Body" ignoring cases
         String checkIf = "Body";
         String sent3Uppercase = sentence3.toUpperCase(); checkIf = checkIf.toUpperCase();
