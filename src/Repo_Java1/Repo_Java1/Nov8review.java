@@ -10,7 +10,7 @@ public class Nov8review {
         * return type: String
         *  */
 
-        /*"given string value
+        /* "given string value"
         * give me data from index-1 to index-4 --> "give"
         * give me data from index-2 --> "ven string value"
         * Input is only beginIndex:
@@ -35,7 +35,7 @@ public class Nov8review {
         String myString_From2 = myString.substring(2);
         System.out.println("myString_From2 = " + myString_From2);
 
-        /*To sprlit a String from a specific point into multiple String values
+        /*To split a String from a specific point into multiple String values
         *
         * method: split()
         * return type: String[]*/
@@ -64,7 +64,7 @@ public class Nov8review {
              b. All the values that I want to store in Array.
           Syntax to create an Array:
             if 1 and 2a:
-            datatype[] arrName = new datatype [totalNumber]; //will create ampty array to store totalNumber values
+            datatype[] arrName = new datatype [totalNumber]; //will create empty array to store totalNumber values
             if 1 and 2b:
             datatype[] arrName = {value1,value2,value3, value4, value5}; */
 
