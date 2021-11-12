@@ -110,6 +110,30 @@ public class Nov8review {
         double totalBills = bills[0] + bills[1] + bills[2] + bills[4] + bills[5];
         System.out.println("\ntotal bill: " + totalBills);
 
+        /*Conditional Code/Loops/Blocks
+        * mon, thur and no meeting
+        *   work from home
+        * any other day
+        *   work from office
+        * 1. if-else block
+        * 2. switch block
+        * Syntax:
+        * if-else
+        * if (condition(s)) {
+        *   if block
+        *   code will execute if conditions(s) is/are true
+        *   else:
+        *       else-block
+        *       code will execute if all above if/else-if condition(s) are false */
+        // if the value in name-variable contains "state", print the value of name-variable
+
+        String name = "United states of america";
+        if (name.toLowerCase().contains("state")) {
+            System.out.println(name);
+        } else {
+            System.out.println("country name doesn't contain state:");
+        }
+
 
 
 

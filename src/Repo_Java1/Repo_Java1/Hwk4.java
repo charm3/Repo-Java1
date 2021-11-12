@@ -34,7 +34,11 @@ public class Hwk4 {
         System.out.println(Arrays.toString(sen3Split));
         //print out result: MAKE,AMERICA,GREAT,AGAIN
         // HELP! DO NOT KNOW HOW TO MAKE ABBREVIATIONS!
-
+        String abbreviation = "";
+        for (int i = 0; i < sen3Split.length; i++) {
+            abbreviation += sen3Split[i].charAt(0);
+        }
+        System.out.println(abbreviation);
 
 
 
