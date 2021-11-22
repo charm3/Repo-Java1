@@ -66,13 +66,15 @@ public class Hwk6 {
          */
         String oldSentence = "HappY nEW YEAR to YoU dEAr";
         String[] arrOldSentence = oldSentence.toLowerCase().split("  ");
-        String newSentence = " ";
+        String newSentence = "";
 
-        for (int i = 0; i <= arrOldSentence.length - 1; i++) {
-            newSentence += arrOldSentence[i];
+        for (int i = 0; i<=arrOldSentence.length-1; i++) {
+            newSentence += arrOldSentence[i].substring(0,1).toUpperCase() + arrOldSentence[i].substring(1) + " ";
 
-            System.out.println(newSentence);
-        }
+                }
+
+        System.out.println(newSentence);
+
 
 
         /*
@@ -97,10 +99,12 @@ public class Hwk6 {
         //  learn more -< more learn
         String learnMo = "learn more";
         String[] arrLearnMo = learnMo.split("  ");
-        String moreLearn = "  ";
+        String moreLearn = " ";
         for (int i = 1; i <= arrLearnMo.length; i++) {
-            System.out.println(arrLearnMo[arrLearnMo.length - i]);
+           moreLearn+= arrLearnMo[arrLearnMo.length-1] + " ";
+
         }
+        System.out.println(moreLearn);
 
         // happy birthday to you -> you to birthday happy
 
@@ -123,12 +127,14 @@ public class Hwk6 {
          * int[] = {-2, -9, -4, -7, -9, -55}     ->  -2
          */
         int[] origData = {23, 54, 76, 12, 67, 90, 23};
-        String maxNumber = "";
+        int maxNumber = 0;
         for (int b = 0; b <= origData.length - 1; b++) {
-            if (origData[origData.length] > origData[b]) ;
+            if (origData[b] > maxNumber)
+                maxNumber = origData[b];
+        }
             System.out.println(maxNumber);
         }
-        }
+
 
 
     }
