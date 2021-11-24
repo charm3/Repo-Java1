@@ -32,5 +32,31 @@ public class ClassReview {
     String thirdString = firstString+secondString;
     System.out.println(thirdString);
 
+        char[] letters = {'a', 'b', 'c', 'd', 'e', 'f', 'g'};
+        /* Print the letters from array as below:
+        Letter at index-0: a
+        Letter at index-1: b
+        Letter at index-2: c
+        ...
+        Letter at index-0: Letters[0]
+        Letter at index-1: Letters[1]
+        Letter at index-i: Letters[i] // i=0,1,2,...lastIndex
+         */
+
+        for (int k = 0; k <= letters.length - 1; k++) {
+            System.out.println(" Letter at index - " + k + " : " + letters[k]);
+        }
+
+        int w = 0;
+        while (w <= letters.length-1) {
+            System.out.println( " Letter at index-" + w + " : " + letters[w]);
+            w++;
+        }
+        int d=0;
+        do{
+            System.out.println(" Letter at index -" + d + " : " + letters[d]);
+            d++;
+        } while (d <= letters.length-1);
+
     }
 }
