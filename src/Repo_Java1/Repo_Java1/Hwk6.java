@@ -65,7 +65,7 @@ public class Hwk6 {
          *
          */
         String oldSentence = "HappY nEW YEAR to YoU dEAr";
-        String[] arrOldSentence = oldSentence.toLowerCase().split("  ");
+        String[] arrOldSentence = oldSentence.toLowerCase().split(" ");
         String newSentence = "";
 
         for (int i = 0; i<=arrOldSentence.length-1; i++) {
@@ -98,10 +98,10 @@ public class Hwk6 {
 
         //  learn more -< more learn
         String learnMo = "learn more";
-        String[] arrLearnMo = learnMo.split("  ");
+        String[] arrLearnMo = learnMo.split(" ");
         String moreLearn = " ";
         for (int i = 1; i <= arrLearnMo.length; i++) {
-           moreLearn+= arrLearnMo[arrLearnMo.length-1] + " ";
+           moreLearn+= arrLearnMo[arrLearnMo.length-i] + " ";
 
         }
         System.out.println(moreLearn);
@@ -110,10 +110,13 @@ public class Hwk6 {
 
         String origBirthday = "happy birthday to you";
 
-        String[] arrBirthday = origBirthday.split("  ");
+        String[] arrBirthday = origBirthday.split(" ");
+        String reverse = "";
         for (int i = 1; i <= arrBirthday.length; i++) {
-            System.out.println(arrBirthday[arrBirthday.length - i]);
+            reverse += arrBirthday[arrBirthday.length - i] + " ";
         }
+            System.out.println(reverse);
+
 
 
         /*
