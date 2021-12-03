@@ -22,14 +22,15 @@ public class MyTest {
          * returned array -> [4, 12, 34, 90]
          *
 
-        /*  Q1 answers: -- not correct;
-        public static int sortArray;(int[] inputArray;) {
+        Q1 answers: -- not correct;
 
+         */
+    }
+/*
+        public static int[] sortArray (int[] inputArray) {
 
-            int[] origArray = inputArray;
-            int tempNum =0;
-            for (int i = 0; i < origArray.length; i++) {
-                for (int j = i; j < origArray.length; j++) {
+           for (int i = 0; i < inputArray.length; i++) {
+                for (int j = i; j >0; j--) {
                     if (origArray[i] > origArray[j]) {
                         tempNum = origArray[i];
                         origArray[i] = origArray[j];
@@ -47,7 +48,7 @@ public class MyTest {
 
             return;
         }
-        */
+
 
         // Q2 answers:
         int total = addDigits(323);
@@ -60,7 +61,7 @@ public class MyTest {
         int temp = 0;
         int[] sortedArray = sortArray(input1);
 
-    }
+
 
     public static int[] sortArray(int[] inputArray) {
         int[] origArray = new int[]{};
@@ -95,6 +96,7 @@ public class MyTest {
      * returned array -> 9
 
      */
+    /*
     public static int addDigits(int inputNum) {
         int number = inputNum;
         int remainder = 0;
@@ -129,13 +131,16 @@ public class MyTest {
 
          */
 
-
+/*
         public static void getCommon(String sameWords){
-            String[] sentence1 = {"happY", "king", "peace", "living standard"};
-            String[] sentence2 = {"king kong", "Happy", "PEACE"};
-            String  makeString = sentence1.ignorec.contentEquals("happy")
-            if(sentence1.toLowerCase().contains("happy")
-                && sentence2.toLowerCase().contains("happy"));
+            String[] sentence1 = new String[] {"happY", "king", "peace", "living standard"};
+            String[] sentence2 = new String[]{"king kong", "Happy", "PEACE"};
+            boolean found = false;
+            String word = "happy";
+
+
+                     }
+
 
         /**
          * Ques-4:
@@ -156,4 +161,4 @@ public class MyTest {
          *
          */
     }
-}
+
