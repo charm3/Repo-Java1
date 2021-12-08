@@ -18,7 +18,6 @@ public class Hwk5 {
             System.out.println("number is divisible by 3");
         } else if (number % 3 == 0 && number % 5 == 0) {
             System.out.println("number is divisible by 5 and 3");
-        } else if (number % 15 == 0) {
         } else if (number % 5 != 0 || number % 3 != 0 || number % 15 != 0) {
         }
         System.out.println("the value in int-variable is " + number);
@@ -56,15 +55,34 @@ public class Hwk5 {
     } else
         System.out.println( " invalid score is entered");
 
+    String[] newWords = {"healthy", "Adeline", "Eric", "king", "smile", "learn"};
+    for(int i=1; i<= newWords.length; i++) {
+        System.out.println(newWords[newWords.length-i]);
+    } //reverse order
 
+        String[] revWords = {"healthy", "Adeline", "Eric", "king", "smile", "learn"};
+    for(int i = revWords.length-1; i>=0; i--) {
+        System.out.println(revWords[i]);  //another way to reverse order
+    }
 
-
-
-                }
-
-
-
+    String palindrome = "Dot saw I was Tod";
+    int len = palindrome.length();
+    char[] temCharArray = new char[len];
+    char[] charArray = new char[len];
+    //put original string in an array of chars
+        for(int i =0; i<len; i++) {
+            temCharArray[i] = palindrome.charAt(i);
         }
+        //reverse array of chars
+        for(int j=0; j<len; j++) {
+            charArray[j] = temCharArray[len-1-j];
+        }
+    String revsePalindrome = new String(charArray);
+        System.out.println(revsePalindrome);
+
+    }
+
+ }
 
 
 

@@ -68,10 +68,10 @@ public class Hwk6 {
         String[] arrOldSentence = oldSentence.toLowerCase().split(" ");
         String newSentence = "";
 
-        for (int i = 0; i<=arrOldSentence.length-1; i++) {
-            newSentence += arrOldSentence[i].substring(0,1).toUpperCase() + arrOldSentence[i].substring(1) + " ";
+        for (int i = 0; i <= arrOldSentence.length - 1; i++) {
+            newSentence += arrOldSentence[i].substring(0, 1).toUpperCase() + arrOldSentence[i].substring(1) + " ";
 
-                }
+        }
 
         System.out.println(newSentence);
 
@@ -99,25 +99,31 @@ public class Hwk6 {
         //  learn more -< more learn
         String learnMo = "learn more";
         String[] arrLearnMo = learnMo.split(" ");
-        String moreLearn = " ";
+        String moreLearn = "";
         for (int i = 1; i <= arrLearnMo.length; i++) {
-           moreLearn+= arrLearnMo[arrLearnMo.length-i] + " ";
+            moreLearn += arrLearnMo[arrLearnMo.length - i] + " ";
 
         }
         System.out.println(moreLearn);
 
+        /* reverse a palindrome string */
+        String palindrome = "Dot saw I was Tod";
+        String[] arrPalindrome = palindrome.split(" ");
+        String revPalindrome = "";
+        for (int i = 1; i <= arrPalindrome.length; i++) {
+            revPalindrome += arrPalindrome[arrPalindrome.length - i] + " ";
+        }
+        System.out.println(revPalindrome);
+
         // happy birthday to you -> you to birthday happy
 
         String origBirthday = "happy birthday to you";
-
         String[] arrBirthday = origBirthday.split(" ");
         String reverse = "";
         for (int i = 1; i <= arrBirthday.length; i++) {
             reverse += arrBirthday[arrBirthday.length - i] + " ";
         }
-            System.out.println(reverse);
-
-
+        System.out.println(reverse);
 
         /*
          * Q4:
@@ -135,12 +141,70 @@ public class Hwk6 {
             if (origData[b] > maxNumber)
                 maxNumber = origData[b];
         }
-            System.out.println(maxNumber);
+        System.out.println(maxNumber);
+
+        int[] fourData = {54, 23, 76, 12};
+        int maxNum = 0;
+        for (int i = 0; i <= fourData.length - 1; i++) {
+            if (fourData[i] > maxNum)
+                maxNum = fourData[i];
         }
+        System.out.println(maxNum);
+
+
+        int[] negData = {-9, -34, -4, -7, -2, -21};  // seeking the largest negative number
+        int maxValue =0;
+        for (int i = 0; i <= negData.length - 1; i++) {
+        if (maxValue ==0 || negData[i] > maxValue) {
+                    maxValue = negData[i];
+        }
+            System.out.println("internal" + maxValue);
+        }
+        System.out.println(maxValue);
+
+
+        int[] negNum = {-18, -21, 6, -10, - 14, -20};
+        int max = 0;
+        for(int i = 0; i< negNum.length; i++) {
+            if (negNum[i] < max) {
+                max = negNum[i]; //seeking smallest number
+
+            }
+            System.out.println(max);
+        }
+        System.out.println(max);
+
+        int arr[] = {2, -1, 4, 1, 0, 7, 2, -3, 5, 9, -4, 5, -9};
+        int maxNegative = 0;
+        for (int i = 0; i<arr.length; i++) {
+            if ( arr[i]>maxNegative){
+                maxNegative = arr[i];
+
+            }
+        }
+        System.out.println(maxNegative);  //see the largest number
+
+        int array[] = {2, -1, 4, 1, 0, 17, 2, -3, 5, -19, -4, 5, -9};
+        int minNumb = 0;
+
+        for(int i=0; i< arr.length; i++) {
+
+           if( array[i] < minNumb) {
+            minNumb = array[i];
+            }
+        }
+        System.out.println(minNumb);
 
 
 
     }
+}
+
+
+
+
+
+
 
 
 

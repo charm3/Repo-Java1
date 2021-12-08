@@ -72,6 +72,16 @@ public class Nov10Review {
 
         }
 
+        int m = 200;
+        String s = String.valueOf(m);  //converting int into String using valueOf() method
+        System.out.println(s);
+
+        String n = "300";
+        Integer o = Integer.valueOf(n); //converting string into integer
+        System.out.println(o);
+
+
+
     }
 }
 

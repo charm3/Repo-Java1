@@ -50,6 +50,30 @@ public class Hwk1 {
 
         System.out.println("Charmaine's name initials is = " +nameInitials1 + nameInitials2 + nameInitials3);
 
+        String myFirstName = "Ling ";
+        myFirstName = myFirstName + "Chen";
+        System.out.println(myFirstName);
+
+        int age = 16;
+        int age1 = 18;
+        age++;
+        System.out.println("age is " + age); //17
+        System.out.println("age again is " + age++); // 17 but internal count is 18
+        System.out.println("age again again is " + age); //18
+        boolean trueOrFalse1 = age++ < --age1; // 18 < 17, internal count is 19
+        System.out.println(trueOrFalse1); // 18 < 17, false
+        System.out.println(age + " " + age1); // 19, 17
+        age--;
+        ++age1;
+        System.out.println("now age is  " + age);
+        System.out.println("now age1 is " + age1);
+        boolean trueOrFalse2 = age == age1;
+        System.out.println(trueOrFalse2);
+
+
+
+
+
 
 
 
