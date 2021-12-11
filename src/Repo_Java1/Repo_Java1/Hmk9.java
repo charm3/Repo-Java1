@@ -59,27 +59,21 @@ public class Hmk9 {
         List<String> duplicateWords = new ArrayList<>();
         Collections.addAll(duplicateWords, words2);
         System.out.println(duplicateWords.size());
-
-        boolean isContains_happy = duplicateWords.contains("happy");
-        System.out.println(isContains_happy);
-        int indexOfHappy = duplicateWords.indexOf("happy");
-        System.out.println("happy is at index of " + indexOfHappy);
-        int lastIndexOfHappy = duplicateWords.lastIndexOf("happy");
-        System.out.println("happy is at last index of " + lastIndexOfHappy);
-                }
+        int length1 =duplicateWords.size();
+        Set<String> wordsNew = new HashSet<>();
+        System.out.println("The Arraylist values are : " + duplicateWords);
+        System.out.println("The ArrayList size is : " + length1);
+        for(int i =0; i < length1; i++) {
+            if(duplicateWords.indexOf(duplicateWords.get(i))
+                    !=(duplicateWords.lastIndexOf(duplicateWords.get(i)))){
+                System.out.println("The duplicate Strings in the list are :"+ duplicateWords.get(i));
+                wordsNew.add(duplicateWords.get(i));
             }
+        }
+        System.out.println("\nThe duplicate string values are :" + wordsNew);
+    }
+}
 
-
-
-
-
-
-
-
-
-//    public Set<String> findDuplicates(String[] inputArray) {
-//        // code
-//    }
 
 
 
