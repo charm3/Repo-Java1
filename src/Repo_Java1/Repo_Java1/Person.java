@@ -5,6 +5,13 @@ class Person {
     private int age;
     private int birth;
 
+    public Person(String bob, int i) {
+    }
+
+    public Person() {
+
+    }
+
     /*this变量
     在方法内部，可以使用一个隐含的变量this，它始终指向当前实例。
     因此，通过this.field就可以访问当前实例的字段。

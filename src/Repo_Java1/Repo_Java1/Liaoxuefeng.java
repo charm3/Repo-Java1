@@ -1,5 +1,6 @@
 package Repo_Java1.Repo_Java1;
 
+import java.util.Arrays;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -87,41 +88,48 @@ public class Liaoxuefeng {
         }
         System.out.println("Total = " + total);
 
-        int[] ns3 = {4,9,16,25,26,31,35}; // find out odd numbers
+        int[] ns3 = {4, 9, 16, 25, 26, 31, 35}; // find out odd numbers
 
         for (int k = 0; k < ns3.length; k++) {
-            if ( ns3[k] % 2 != 0) {
+            if (ns3[k] % 2 != 0) {
                 System.out.print(ns3[k] + ", ");
             }
 
-            }
-
-
-            // break;
-            int addSum = 0;
-            for (int l = 1; ; l++) {
-                addSum = addSum + l;
-                if (l == 100) {
-                    break;
-                }
-            }
-            System.out.println("the sum is :  " + addSum);
-
-            // find even numbers
-            int newSum = 0;
-            for (int m = 1; m <= 10; m++) {
-                System.out.println("begin m = " + m);
-                if (m % 2 == 0) {
-                    continue;  //continue word will end the loop
-                }
-                newSum += m;
-                System.out.println("end m = " + m);
-            }
-            System.out.println(newSum);  //
-
         }
 
+
+        // break;
+        int addSum = 0;
+        for (int l = 1; ; l++) {
+            addSum = addSum + l;
+            if (l == 100) {
+                break;
+            }
+        }
+        System.out.println("the sum is :  " + addSum);
+
+        // find even numbers
+        int newSum = 0;
+        for (int m = 1; m <= 10; m++) {
+            System.out.println("begin m = " + m);
+            if (m % 2 == 0) {
+                continue;  //continue word will end the loop
+            }
+            newSum += m;
+            System.out.println("end m = " + m);
+        }
+        System.out.println(newSum);
+
+
+        String[] ss = new String[]{"Orange", "Apple", "Pear"};
+        Arrays.sort(ss);
+        System.out.println(Arrays.toString(ss));
     }
+
+    }
+
+
+
 
 
 
