@@ -1,7 +1,6 @@
-package Repo_Java1.Repo_Java1;
+ package Repo_Java1.Repo_Java1;
 
-import java.util.Arrays;
-import java.util.Locale;
+ import java.util.Arrays;
 
 public class Hwk4 {
     public static void main(String[] args) {

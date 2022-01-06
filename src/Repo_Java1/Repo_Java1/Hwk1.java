@@ -66,7 +66,7 @@ public class Hwk1 {
         age--;
         ++age1;
         System.out.println("now age is  " + age);
-        System.out.println("now age1 is " + age1);
+        System.out.println("now age1 is " +   age1);
         boolean trueOrFalse2 = age == age1;
         System.out.println(trueOrFalse2);
 

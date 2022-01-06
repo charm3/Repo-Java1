@@ -7,7 +7,7 @@ public class Hwk2 {
     public static void main(String[] args) {
         /* convert Fahrenheit to Celsius
         TC = (TF - 32) * 5/9
-        TF = 37 in Richmond, VA now
+        TF = 37 in Richmond, VA
         TC = 2.78
   */
     double TempF = 37;
